@@ -33,8 +33,8 @@ while(1):
 
 	# Set range for blue color and 
 	# define mask 
-	blue_lower = np.array([94, 80, 2], np.uint8) 
-	blue_upper = np.array([120, 255, 255], np.uint8) 
+	blue_lower = np.array([90, 50, 50], np.uint8) 
+	blue_upper = np.array([130, 255, 255], np.uint8) 
 	blue_mask = cv2.inRange(hsvFrame, blue_lower, blue_upper) 
 	
 	# Morphological Transform, Dilation 
